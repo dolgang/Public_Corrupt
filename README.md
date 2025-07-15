@@ -21,10 +21,14 @@
 4. 달성 여부를 만족하면, `IsUpgrade`가 true로 변경되고 'CollectionManager'를 통해 다른 CollectionInfo의 달성 여부도 확인
 5. 위 확인 작업이 모두 끝나고 나면 UI 갱신 요청
 6. 이후 업그레이드 시 이전 능력치를 제거하고 새로운 능력치를 적용, 플레이어 전투력 갱신
-7. 
 
 ## 회고
 
 - 단순한 보상 목록이 아니라 **이벤트 기반 자동 조건 판단 구조**를 처음으로 설계 및 구현
 - 다양한 분기(장비/스킬, 희귀도/레벨)에 따라 조건이 다르기 때문에 Enum과 Dictionary 중심의 구조 설계 경험
 - 실시간 반영과 스탯 적용 간의 타이밍 문제를 해결하면서 **유니티 이벤트 흐름과 상태 저장 방식에 대한 감각**을 익힘
+
+## 실제 구현 이미지
+
+![이미지1](https://github.com/dolgang/Public_Corrupt/blob/main/Image/41a8fe75-648c-4123-b060-fe98cd22dee1.png)
+![이미지2](https://github.com/dolgang/Public_Corrupt/blob/main/Image/a4c099aa-a1fa-4639-ad08-c0039e3fd725.png)
